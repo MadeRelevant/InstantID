@@ -58,7 +58,7 @@ if __name__ == "__main__":
     prompt = "analog film photo of a man. faded film, desaturated, 35mm photo, grainy, vignette, vintage, Kodachrome, Lomography, stained, highly detailed, found footage, masterpiece, best quality"
     n_prompt = "(lowres, low quality, worst quality:1.2), (text:1.2), watermark, painting, drawing, illustration, glitch, deformed, mutated, cross-eyed, ugly, disfigured (lowres, low quality, worst quality:1.2), (text:1.2), watermark, painting, drawing, illustration, glitch,deformed, mutated, cross-eyed, ugly, disfigured"
 
-    face_image = load_image("./examples/yann-lecun_resize.jpg")
+    face_image = load_image("./examples/timon.jpg")
     face_image = resize_img(face_image)
 
     face_info = app.get(cv2.cvtColor(np.array(face_image), cv2.COLOR_RGB2BGR))
